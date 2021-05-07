@@ -3,6 +3,16 @@
 Outline of the Superheros demo and the base for Re-jiji
 
 # Please add any other dependencies and installs below with instruction 
+"dependencies": 
+*   "cookie-parser": "~1.4.4",
+*   "debug": "~2.6.9",
+*   "express": "~4.16.1",
+*   "http-errors": "~1.6.3",
+*   "mongoose": "^5.11.11",
+*   "morgan": "~1.9.1"
+
+  "devDependencies": {
+*   "nodemon": "^2.0.7"
 
 This project is a MERN (MongoDB, ExpressJS, ReactJS, Node.js) application made
 of two processes:
