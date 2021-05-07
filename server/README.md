@@ -9,7 +9,7 @@
 			- password
 			- DBName
 			- mongoServer
-		- return status of DB connection or Erro
+		- return status of DB connection or Error
 	>Superhero.js (not superhero.js in routes)
         - sets schema for superheroSchema model
 
