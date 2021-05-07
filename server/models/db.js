@@ -1,3 +1,5 @@
+// will need to set-up online database so we can all access
+
 const mongoose = require('mongoose');
 const mongoUser = 'dbReadOnlyUser';
 const mongoPasswd = 'jelly1234';
