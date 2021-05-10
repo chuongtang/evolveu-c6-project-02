@@ -41,3 +41,13 @@
 		- morgan
 
 >server.js - standard set-up of localhost:3000
+
+Added more dependencies:
+bcryptjs - hash to password before storing
+concurrently - allow backend and frontend concurrently on different ports 3000/4400
+is-empty - global function to support validator
+jsonwebtoken - used for authorization
+passport - used to authenticate requests thru strategies
+passport-jwt passport strategy that uses JSON WebToken to authenticate endpoints
+validator - used to validate inputs such as email format, password match
+AND NODEMON 
