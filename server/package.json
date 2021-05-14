@@ -2,8 +2,6 @@
   "name": "server",
   "version": "0.0.0",
   "private": true,
-  
-  //   // do I need to change the scripts to "start": "node server.js" and "server": "nodemon server.js"?
   "scripts": {
     "start": "nodemon server.js"
   },
