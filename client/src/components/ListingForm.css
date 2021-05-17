@@ -1,0 +1,15 @@
+.add-listing__controls {
+    background-color: #E5E5E5;
+    display: flex;
+    align-content: flex-start;
+    flex-direction: column;
+}
+
+.add-listing__control {
+    display: flex;
+    align-content: flex-start;
+}
+
+input {
+    width: 30%;
+}

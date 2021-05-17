@@ -1,6 +1,7 @@
 import React, { useState } from "react";
+import './ListingForm.css'
 
-const ListingForm = () => {
+const ListingForm = (props) => {
   const [listingCategory, setListingCategory] = useState(" ");
   const [listingType, setListingType] = useState(" ");
   const [listingDisposal, setListingDisposal] = useState(" ");
@@ -46,6 +47,18 @@ const ListingForm = () => {
   const submitHandler = (event) => {
     event.preventDefault();
   };
+  
+  // const listingDataHandler = () => {
+  //   const listingData = {
+  //     category: listingCategory,
+  //     type: listingType,
+  //     locationPC: listingLocationPC,
+  //     disposal: listingDisposal,
+  //     description: listingDescription,
+  //     quantity: listingQuantity,
+  //   };
+
+  // }
   
   // props.onSaveListingData();
 
