@@ -1,14 +1,25 @@
-import './App.css';
-import ListingForm from './components/ListingForm/ListingForm';
-
-function App() {
+// import ListingForm from './components/ListingForm/ListingForm';
+import React from 'react'
+import {
+  BrowserRouter as Router,
+  Route,
+  Redirect,
+  Switch,
+} from "react-router-dom";
+import MainNavigation from "../src/Shared/components/Navigation/MainNavigation";
+// import './App.css';
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-      </header>
-      <ListingForm />
-    </div>
+    <Router>
+      <MainNavigation />
+      </Router>
+    // <div className="App">
+    //   <header className="App-header">
+    //   </header>
+    //   <ListingForm />
+
+    // </div>
   );
-}
+};
 
 export default App;
