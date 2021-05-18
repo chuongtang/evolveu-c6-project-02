@@ -1,25 +1,28 @@
-import React from 'react';
-import './App.css';
-import ListingForm from './components/ListingForm';
-import Form from './Form';
-
-function App() {
+//import ListingForm from './components/ListingForm/ListingForm';
+import React from 'react'
+import {
+  BrowserRouter as Router,
+  Route,
+  Redirect,
+  Switch,
+} from "react-router-dom";
+import MainNavigation from "../src/Shared/components/Navigation/MainNavigation";
+import Users from './Lib/Users'
+// import './App.css'
+import Form from './components/SignUp/Form';
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        {/* <img src={logo} className="App-logo" alt="logo" /> */}
-        {/* <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p> */}
-        {/* <a
-          className="App-link"
-        > */}
-          {/* This will be our MERN Project
-        </a> */}
-      </header>
-      <ListingForm />
+    // <Users users={[{name: "Abdu"}]}/>
+    <Router>
+      <MainNavigation />
       <Form/>
-    </div>
+    {/* // <div className="App">
+    //   <header className="App-header">
+    //   </header>
+    //   <ListingForm />
+    // </div> */}
+      </Router>
   );
-}
+};
+
 export default App;
