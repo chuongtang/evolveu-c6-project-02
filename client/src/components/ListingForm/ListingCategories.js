@@ -12,6 +12,7 @@ const ListingCategories = () => {
     category6: "Furniture",
     category7: "Textiles",
     category8: "Other",
+    category9: "Recyclables"
   };
 
   const categoryInsertedHandler = (event) => {
@@ -30,6 +31,7 @@ const ListingCategories = () => {
         <option value={categories.category6}>Furniture</option>
         <option value={categories.category7}>Textiles</option>
         <option value={categories.category8}>Other</option>
+        <option value={categories.category9}>Recyclables</option>
       </select>
     </div>
   );

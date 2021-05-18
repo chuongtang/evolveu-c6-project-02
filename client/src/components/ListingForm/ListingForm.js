@@ -10,6 +10,24 @@ import ListingQuantity from "./ListingQuantity";
 
 const ListingForm = (props) => {
   
+  const listingsData = props.listingData;
+
+  const listingDataHandler = () => {
+    listingsData.map((listing) => {
+      return {
+        category: listing.category,
+        type: listing.type,
+        diposal: listing.diposal,
+        locationPC: listing.location,
+        description: listing.description,
+        quantity: listing.quantity,
+      }
+    })
+  }
+
+  console.log(listingDataHandler())
+  
+    
   const submitHandler = (event) => {
     event.preventDefault();
   };
@@ -17,7 +35,7 @@ const ListingForm = (props) => {
   // props.onSaveListingData();
 
   return (
-    <form onSubmit={submitHandler}>
+    <form onSubmit={submitHandler, listingDataHandler}>
       <div className="add-listing__controls">
         <ListingCategories />
         <ListingType />
