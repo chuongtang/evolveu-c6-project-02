@@ -1,5 +1,7 @@
+import React from 'react';
 import './App.css';
 import ListingForm from './components/ListingForm';
+import Form from './Form';
 
 function App() {
   return (
@@ -16,8 +18,8 @@ function App() {
         </a> */}
       </header>
       <ListingForm />
+      <Form/>
     </div>
   );
 }
-
 export default App;
