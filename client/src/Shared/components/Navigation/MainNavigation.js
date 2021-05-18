@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useHistory } from 'react-router-dom';
 import { Render } from 'react-dom';
 
 
@@ -10,6 +11,16 @@ import Backdrop from '../UIElements/Backdrop';
 import './MainNavigation.css';
 
 
+
+
+const LogoClickableImage  = () => {
+  const history = useHistory();
+  const handleClick = () => history.push('/');
+  
+  return (
+    <img className="header-image" src="images/logtransparent.png" onClick={handleClick} />
+  );
+};
 const MainNavigation = props => {
   const [drawerIsOpen, setDrawerIsOpen] = useState(false);
 
@@ -40,7 +51,8 @@ const MainNavigation = props => {
           <span />
         </button>
         <h1 className="main-navigation__title" >
-        <img className='header-image' src='images/logtransparent.png' alt='Rejiji' />
+          <LogoClickableImage />
+        {/* <img  className='header-image' src='images/logtransparent.png' alt='Rejiji'  /> */}
         </h1>
         <nav className="main-navigation__header-nav">
           <NavLinks />
