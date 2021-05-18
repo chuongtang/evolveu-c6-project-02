@@ -1,0 +1,30 @@
+.logo-image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: transparent;
+  align-items: center;
+  width: 10rem;
+  height: 10rem;
+  
+}
+
+.logo-image-div {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  position: inherit;
+  top: 0;
+  left: 0;
+  background: #5fccbd;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.26);
+  padding: 0 1rem;
+  z-index: 5;
+}
+
+@media (min-width: 768px) {
+  .logo-image-div {
+    flex-direction: space-between;
+  }
+}
