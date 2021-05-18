@@ -11,10 +11,10 @@ import Users from './Lib/Users'
 // import './App.css';
 const App = () => {
   return (
-    <Users users={[{name: "Abdu"}]}/>
-    // <Router>
-    //   <MainNavigation />
-    //   </Router>
+    // <Users users={[{name: "Abdu"}]}/>
+    <Router>
+      <MainNavigation />
+      </Router>
     // <div className="App">
     //   <header className="App-header">
     //   </header>
