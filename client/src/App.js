@@ -7,12 +7,14 @@ import {
   Switch,
 } from "react-router-dom";
 import MainNavigation from "../src/Shared/components/Navigation/MainNavigation";
+import Users from './Lib/Users'
 // import './App.css';
 const App = () => {
   return (
-    <Router>
-      <MainNavigation />
-      </Router>
+    <Users users={[{name: "Abdu"}]}/>
+    // <Router>
+    //   <MainNavigation />
+    //   </Router>
     // <div className="App">
     //   <header className="App-header">
     //   </header>
