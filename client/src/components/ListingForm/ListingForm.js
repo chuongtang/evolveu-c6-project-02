@@ -36,7 +36,7 @@ const ListingForm = (props) => {
 
   return (
     <form onSubmit={submitHandler, listingDataHandler}>
-      <div className="add-listing__controls">
+      <div className="form-container">
         <ListingCategories />
         <ListingType />
         <ListingDisposal />
@@ -44,7 +44,7 @@ const ListingForm = (props) => {
         <ListingDescription />
         <ListingQuantity />
         <div className="add-listing__actions">
-          <button type="submit">Add Listing</button>
+          <button className="form-input-btn" type="submit">Add Listing</button>
         </div>
       </div>
     </form>
