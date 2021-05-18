@@ -5,7 +5,7 @@ import React from "react"
 
 import  './BodyDiv.css'
 const BodyDiv = () => {
-  Render() 
+  
  return ( 
  <div > 
  
