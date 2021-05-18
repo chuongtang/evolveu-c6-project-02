@@ -9,9 +9,10 @@ const ListingDescription = () => {
   };
 
   return (
-    <div className="add-listing__control">
-      <label>Please, provide a description of your item</label>
+    <div className='form-inputs'>
+      <label className='form-label'>Please, provide a description of your item</label>
       <textarea
+        className='form-input'
         type="text"
         value={listingDescription}
         onChange={descriptionInsertedHandler}

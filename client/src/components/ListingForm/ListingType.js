@@ -8,9 +8,10 @@ const ListingType = () => {
   };
 
   return (
-    <div className="add-listing__control">
-      <label>Type</label>
+    <div className='form-inputs'>
+      <label className='form-label'>Type</label>
       <input
+        className='form-input'
         type="text"
         value={listingType}
         onChange={typeInsertedHandler}

@@ -9,9 +9,10 @@ const ListingLocation = () => {
       };
   
     return (
-    <div className="add-listing__control">
-      <label>Location</label>
+    <div className='form-inputs'>
+      <label className='form-label'>Location</label>
       <input
+        className='form-input'
         type="text"
         value={listingLocationPC}
         onChange={locationPCInsertedHandler}

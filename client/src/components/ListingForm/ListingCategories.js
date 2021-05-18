@@ -20,9 +20,9 @@ const ListingCategories = () => {
   };
 
   return (
-    <div className="add-listing__control">
-      <label>Category</label>
-      <select value={listingCategory} onChange={categoryInsertedHandler}>
+    <div className="form-inputs">
+      <label className='form-labels'>Category</label>
+      <select className='form-input' value={listingCategory} onChange={categoryInsertedHandler}>
         <option value={categories.category1}>Paper</option>
         <option value={categories.category2}>Plastic</option>
         <option value={categories.category3}>Electronic</option>

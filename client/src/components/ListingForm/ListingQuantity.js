@@ -9,9 +9,10 @@ const ListingQuantity = () => {
   };
 
   return (
-    <div className="add-listing__control">
-      <label>Quantity</label>
+    <div className='form-inputs'>
+      <label className='form-label'>Quantity</label>
       <input
+        className='form-input'
         type="number"
         value={listingQuantity}
         onChange={quantityInsertedHandler}

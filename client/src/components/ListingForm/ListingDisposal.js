@@ -8,9 +8,9 @@ const ListingDisposal = () => {
   };
 
   return (
-    <div className="add-listing__control">
-      <label>How do you want to dispose your items?</label>
-      <select
+    <div className='form-inputs'>
+      <label className='form-label'>How do you want to dispose your items?</label>
+      <select className='form-input'
         type="radio"
         value={listingDisposal}
         onChange={disposalInsertedHandler}
