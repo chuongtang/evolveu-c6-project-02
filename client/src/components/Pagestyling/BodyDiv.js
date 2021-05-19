@@ -7,7 +7,7 @@ import  './BodyDiv.css'
 const BodyDiv = () => {  
  return ( 
     <div className='logo-image-div' > 
-      <img className='logo-image' src='images/logtransparent.png'/>
+      <img className='logo-image' src='images/abdu.png'/>
         </div>
   )
 }

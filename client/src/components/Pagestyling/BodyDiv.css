@@ -31,7 +31,7 @@
 }
 @media (prefers-reduced-motion: no-preference) {
   .logo-image {
-    animation: App-logo-spin infinite 5s linear;
+    animation: App-logo-spin infinite 30s linear;
   }
 }
 @keyframes App-logo-spin {
