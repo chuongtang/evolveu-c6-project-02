@@ -4,12 +4,11 @@ import React from "react"
 
 
 import  './BodyDiv.css'
-const BodyDiv = () => {
-  
+const BodyDiv = () => {  
  return ( 
- <div > 
- 
-  </div>
+    <div className='logo-image-div' > 
+      <img className='logo-image' src='images/logtransparent.png'/>
+        </div>
   )
 }
 

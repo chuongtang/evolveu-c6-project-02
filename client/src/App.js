@@ -9,6 +9,7 @@ import MainNavigation from "../src/Shared/components/Navigation/MainNavigation";
 import Users from "./Lib/Users";
 import Form from "./components/SignUp/Form";
 import BodyDiv from "./components/Pagestyling/BodyDiv";
+import CategoryNavLinks from './components/Listings/components/CategoryNavLinks'
 
 
 import "./App.css";
@@ -22,8 +23,9 @@ const App = () => {
       <Route path="/signup" exact>
         <Form />
       </Route>
+      <BodyDiv/>
       </Switch>
-      {/* <BodyDiv/>       */}
+      <CategoryNavLinks/>
     </Router>
   );
 };
