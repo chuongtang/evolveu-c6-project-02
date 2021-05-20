@@ -9,8 +9,7 @@ import MainNavigation from "../src/Shared/components/Navigation/MainNavigation";
 import Users from "./Lib/Users";
 import Form from "./components/SignUp/Form";
 import BodyDiv from "./components/Pagestyling/BodyDiv";
-import CategoryNavLinks from './components/Listings/components/CategoryNavLinks'
-
+import CategoryNavLinks from "./components/Listings/components/CategoryNavLinks";
 
 import "./App.css";
 const App = () => {
@@ -20,12 +19,12 @@ const App = () => {
       {/* <main>
       </main> */}
       <Switch>
-      <Route path="/signup" exact>
-        <Form />
-      </Route>
-      <BodyDiv/>
+        <Route path="/signup" exact>
+          <Form />
+        </Route>
+        <BodyDiv />
       </Switch>
-      <CategoryNavLinks/>
+      <CategoryNavLinks />
     </Router>
   );
 };
