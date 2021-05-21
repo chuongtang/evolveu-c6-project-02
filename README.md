@@ -55,11 +55,13 @@ that is found in `server/models/db.js` under the comment `// SETUP MONGO/MONGOOS
 For example, if you are using a local install you might set:
 
 ```js
-const mongoUser = 'dbUser';
-const mongoPasswd = 'hideMe!!';
-const mongoDBName = 'my_mongo_db';
+const mongoUser = 'gwhagerty';
+const mongoPasswd = 'gwhagerty';
+const mongoDBName = 'rejiji';
 const mongoServer = 'localhost:27017';
+mongodb+srv://gwhagerty:gwhagerty@rejiji.v07fo.mongodb.net/myFirstDatabase?retryWrites=true&w=majority
 ```
+
 
 # How this project was created
 
@@ -71,8 +73,8 @@ this project
 
 Here are the command-line steps taken to create the initial version of this project:
 ```bash
-$ mkdir superheroes
-$ cd superheroes
+$ mkdir rejiji
+$ cd rejiji
 $ npx create-react-app --use-npm client
 $ npx express-generator server
 $ rm -rf client/.git client/.gitignore client/yarn.k

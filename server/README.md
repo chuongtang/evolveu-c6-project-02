@@ -5,13 +5,14 @@
 	>db.js
 		- set-up mongoose 
 		- credentials for mongoDB 
-			- user
-			- password
-			- DBName
-			- mongoServer
+			- user - gwhagerty
+			- password - gwhagerty
+			- DBName - rejiji
+			- mongoServer - mongodb+srv://gwhagerty:<password>@rejiji.v07fo.mongodb.net/myFirstDatabase?retryWrites=true&w=majority
 		- return status of DB connection or Error
-	>Superhero.js (not superhero.js in routes)
-        - sets schema for superheroSchema model
+	>user.js 
+	>listing.js
+        - sets schema for user and listing model
 
 >node_modules
 	- Have not updated, checked .gitignore is enabled
@@ -21,9 +22,9 @@
 	>index.js 
 		- standard express for .Router
 		- export "router"
-	>superhero.js 
+	>user.js 
 		- standard express for .Router
-		- UPDATE model from Superhero.js to ***********
+		- UPDATE model from user.js to ***********
 		- export "router"
 
 >apps.js 

@@ -5,7 +5,7 @@ var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
 // IMPORT ROUTES
-var superheroRouter = require('./routes/superhero');
+var userRouter = require('./routes/user');
 
 var app = express();
 
@@ -15,10 +15,10 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 
 // USE ROUTES
-app.use('/superhero', superheroRouter);
+app.use('/user', userRouter);
 
 // serve the react application relative path ../ up a folder
-app.use(express.static('../client/build'))
+// app.use(express.static('../client/build'))
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
