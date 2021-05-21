@@ -1,6 +1,6 @@
 import React from 'react';
-import './Form.css';
 
+import './Form.css';
 const FormSuccess = () => {
     return (
         <div className="form-content-right">

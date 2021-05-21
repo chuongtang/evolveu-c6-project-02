@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import './Form.css';
 import FormSignUp from './FormSignUp';
 import FormSuccess from './FormSuccess';
 
+import './Form.css';
 const Form = () => {
   const [isSubmitted, setIsSubmitted] = useState(false);
 
