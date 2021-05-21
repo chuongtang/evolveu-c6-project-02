@@ -10,7 +10,7 @@
 			- DBName - rejiji
 			- mongoServer - mongodb+srv://gwhagerty:<password>@rejiji.v07fo.mongodb.net/myFirstDatabase?retryWrites=true&w=majority
 		- return status of DB connection or Error
-	>user.js 
+	>user.js
 	>listing.js
         - sets schema for user and listing model
 
@@ -24,8 +24,29 @@
 		- export "router"
 	>user.js 
 		- standard express for .Router
-		- UPDATE model from user.js to ***********
+		- UPDATE model from user.js to seeded to collection in MongoDB
 		- export "router"
+	>??? or listing.js 
+		- standard express for .Router
+		- UPDATE model from listing.js seeded to collection in MongoDB
+		- export "router"
+
+		Want to have 1 schema for each collection - 1 collection per CRUD
+
+		We will have two models:  userID and listing, each with schema from this link:
+		https://app.diagrams.net/#G1OSfeHqitMWooxYB1QKy3kEXx8PavaB34
+
+		Review REST APIs: Create(POST), Read(GET), Update(PUT), Delete(Delete)
+		Need to define endpoint or path - either userID or listing
+
+		userID Endpoint segments: 
+		GET/api/user/:userID to validate new unique userID in registration
+		POST/api/user/ to register the new user with validation of schema inputs
+
+		listing Endpoint segments: 
+		GET/api/listing/:userID to query items to the userID
+		PATCH - we could update listings IF we get that far.
+		DELETE/api/listing/ to delete the listing only able to query with matching userID
 
 >apps.js 
 	- standard list of required dependencies for APP
