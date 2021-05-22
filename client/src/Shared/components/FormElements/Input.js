@@ -1,5 +1,5 @@
 import React, {useReducer, useEffect} from 'react';
-
+//check route for valid
 import { validate } from '../../../components/util/validators';
 import ListingCategories from './ListingCategories';
 import './Input.css';
