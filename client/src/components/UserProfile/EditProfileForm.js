@@ -1,22 +1,24 @@
 import { useState } from "react"
 
-const EditSuperheroForm = ({userName,email,location,image,listings,onSave, saveError, saveButtonCaption} }) => {
-    let [updatedName, setUpdatedName] = useState(name)
+const EditProfileForm = ({userName,email,location,image,listings,onSave, saveError, saveButtonCaption}) => {
+    let [updatedName, setUpdatedName] = useState(userName)
     let [updatedEmail, setUpdatedEmail] = useState(email)
-    let [updatedAlterego, setUpdatedAlterego] = useState(alterego)
-    let [updatedSidekick, setUpdatedSidekick] = useState(sidekick)
+    let [updatedLocation, setUpdatedLocation] = useState(location)
+    let [updatedImage, setUpdatedImage] = useState(img)
+    let [updatedListing, setUpdatedListing] = useState(listings)
 
 
     async function onSaveClicked() {
         console.log('Create has been clicked!')
-        let updatedSuperhero = {
-            name: updatedName, 
+        let updatedUser = {
+            name: updatedName,
             email: updatedEmail,
-            alterego: updatedAlterego,
-            sidekick: updatedSidekick
+            location:updatedLocation,
+            image:updatedImage,
+            listings:listings
         }
-        console.log('Creating superhero with', updatedSuperhero )
-        onSave(updatedSuperhero)
+        console.log('Creating user with', updatedUser)
+        onSave(updatedUser)
     }
 
     const onInputChange = (event, setFunction) => {
@@ -29,25 +31,29 @@ const EditSuperheroForm = ({userName,email,location,image,listings,onSave, saveE
     return (
         <div>
             <div>
-                <label htmlFor="name">Name</label>
-                <input id="name" value={updatedName} onChange={(event) => onInputChange(event,setUpdatedName)}/>
+            <label htmlFor="userName">User Name</label>
+            <input id="userName" value={updatedName} onChange={(event) => onInputChange(event,setUpdatedName)}/>
             </div>
             <div>
-                <label htmlFor="nickname">Nickname</label>
-                <input id="nickname" value={updatedNickname} onChange={(event) => onInputChange(event,setUpdatedNickname)}/>
+            <label htmlFor="email">Email</label>
+            <input id="email" value={updatedEmail} onChange={(event) => onInputChange(event,setUpdatedEmail)}/>
             </div>
             <div>
-                <label htmlFor="alterego">Alter ego</label>
-                <input id="alterego" value={updatedAlterego} onChange={(event) => onInputChange(event,setUpdatedAlterego)}/>
+            <label htmlFor="location">Location</label>
+            <input id="location" value={updatedLocation} onChange={(event) => onInputChange(event,setUpdatedLocation)}/>
             </div>
             <div>
-                <label htmlFor="sidekick">Sidekick</label>
-                <input id="sidekick" value={updatedSidekick} onChange={(event) => onInputChange(event,setUpdatedSidekick)}/>
+            <label htmlFor="image">Image</label>
+            <input id="image" value={updatedImage} onChange={(event) => onInputChange(event,setUpdatedImage)}/>
             </div>
-            <button disabled={ createSuperheroDataInvalid } onClick={ onSaveClicked }>{saveButtonCaption}</button>
-            { saveError && <div>{saveError}</div> }            
+            <div>
+            <label htmlFor="listing">Listing</label>
+            <input id="listing" value={updatedListing} onChange={(event) => onInputChange(event,setUpdatedListing)}/>
+            </div>
+            <button disabled={ createUserDataInvalid } onClick={ onSaveClicked }>{saveButtonCaption}</button>
+            { saveError && <div>{saveError}</div> }
         </div>
     )
 }
 
-export default EditSuperheroForm
+   export default EditProfileForm
