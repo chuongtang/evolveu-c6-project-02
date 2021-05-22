@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useHistory } from 'react-router-dom';
-import { Render } from 'react-dom';
+// import { Render } from 'react-dom';
 
 
 import MainHeader from './MainHeader';
