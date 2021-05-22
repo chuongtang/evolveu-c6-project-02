@@ -1,0 +1,30 @@
+.listing-form {
+    margin: 100px auto;
+    width: 70%;
+    /* height: 10rem; */
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.2);
+    position: relative;
+    border-radius: 10px;
+    display: block;
+    text-align: center;
+}
+
+.form-inputs {
+    font-size: 1rem;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+label {
+    padding-left: 2rem;
+
+}
+
+.form-input {
+    margin-left: 2rem;
+    display: flex;
+}
+
+

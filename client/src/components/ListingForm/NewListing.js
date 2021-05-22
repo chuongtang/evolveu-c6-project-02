@@ -66,14 +66,6 @@ const NewListing = () => {
 
     return (
       <form className='listing-form' onSubmit={listingSubmitHandler}>
-        <Input  // DELETE! THIS IS A TEST
-          element='input'
-          type='text'
-          label='Title'
-          validators={[VALIDATOR_REQUIRE()]}
-          errorText="Please enter a valid Title."
-          onInput={inputHandler}
-        />
         <Input 
           element='select'
           type='text'
@@ -96,7 +88,7 @@ const NewListing = () => {
           type='text'
           label='Description'
           validators={[VALIDATOR_REQUIRE()]}
-          errorText="Please enter a valid Description."
+          errorText="Please enter a valid quantity."
           onInput={inputHandler}
         />
         <Input 
