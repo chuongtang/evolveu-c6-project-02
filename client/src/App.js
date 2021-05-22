@@ -19,8 +19,13 @@ const App = () => {
     <Router>
         <MainNavigation />
       <Switch>
+<<<<<<< HEAD
         <Route path='/logIn'>
           <LogIn />
+=======
+        <Route path="/add_listing" exact>
+          <NewListing />
+>>>>>>> ecf87e2e0df165bd290bb2ce26eb3e7593b20f12
         </Route>
         <Route path="/signup" exact>
           <Form />
@@ -28,7 +33,6 @@ const App = () => {
       </Switch>
         <BodyDiv />
       <CategoryNavLinks />
-      
     </Router>
   );
 };
