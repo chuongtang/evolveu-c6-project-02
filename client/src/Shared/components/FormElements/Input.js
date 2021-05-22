@@ -1,9 +1,10 @@
-import React, {useReducer} from 'react';
+import React, {useReducer, useEffect} from 'react';
 
-import { validate } from '../../../util/validators';
+import { validate } from '../../../components/util/validators';
+import ListingCategories from './ListingCategories';
 import './Input.css';
 
-const InputReducer = (state, action) => {
+const inputReducer = (state, action) => {
   switch(action.type) {
     case 'CHANGE':
       return {
@@ -22,11 +23,20 @@ const InputReducer = (state, action) => {
   }
 };
 
+
 const Input = (props) => {
-  const [inputState, dispatch] = useReducer(InputReducer, { //the first argument is an action and the second argument is the initial state, which is optional
-    value:'', 
+  const [inputState, dispatch] = useReducer(inputReducer, { //the first argument is an action and the second argument is the initial state, which is optional
+    value: '',
+    isTouched: false,
     isValid: false
-  }); 
+  });
+
+  const { id, onInput } = props;
+  const { value, isValid } = inputState;
+
+  useEffect(() => {
+    onInput(id, value, isValid)
+  }, [id, value, isValid, onInput]);
   
   const changeHandler = (event) => {
     dispatch({type: 'CHANGE', 
@@ -41,32 +51,58 @@ const Input = (props) => {
     });
   };
 
-  const element = 
-    props.element === input ? (
-      <input
-      id={props.id}
-      type={props.type}
-      placeholder={props.placeholder}
-      onChange={changeHandler}
-      onBlur={touchHandler}
-      value={inputState.value}
-    /> 
-    ) : (
-      <textarea
-      id={props.id}
-      rows={props.rows || 3}
-      onChange={changeHandler}
-      onBlur={touchHandler}
-      value={inputState.value}
-      />
-    );
+  const element = () => {
+    
+     if(props.element === 'input'){
+      return (
+        <input
+          id={props.id}
+          type={props.type}
+          placeholder={props.placeholder}
+          onChange={changeHandler}
+          onBlur={touchHandler}
+          value={inputState.value}
+        />) 
+    } else if (props.element === 'select') {
+        return (
+          <select 
+            id={props.id}
+            type={props.type}
+            onChange={changeHandler}
+            // onBlur={touchHandler}
+            value={inputState.value}
+          >
+          <ListingCategories id='paper' displayedCategory='Paper'/>
+          <ListingCategories id='plastic' displayedCategory='Plastic'/>
+          <ListingCategories id='electronic' displayedCategory='Electronic'/>
+          <ListingCategories id='glass' displayedCategory='Glass'/>
+          <ListingCategories id='metal' displayedCategory='Metal'/>
+          <ListingCategories id='furniture' displayedCategory='Furniture'/>
+          <ListingCategories id='textile' displayedCategory='Textile'/>
+          <ListingCategories id='recyclabes' displayedCategory='Recyclables'/>
+          <ListingCategories id='other' displayedCategory='Other'/>
+          </select>
+        )
+
+    } else {
+      return (
+        <textarea
+          id={props.id}
+          rows={props.rows || 3}
+          onChange={changeHandler}
+          onBlur={touchHandler}
+          value={inputState.value}
+        />
+      )
+    }
+  };
   
   return (
     <div className={`form-control ${!inputState.isValid && inputState.isTouched &&
       'form-control--invalid'}`}
     >
       <label htmlFor={props.id}>{props.label}</label>
-      {element}
+      {element()}
       {!inputState.isValid && inputState.isTouched && <p>{props.errorText}</p>}
     </div>
   )

@@ -6,6 +6,7 @@ import {
   Switch,
 } from "react-router-dom";
 import MainNavigation from "../src/Shared/components/Navigation/MainNavigation";
+import NewListing from './components/ListingForm/NewListing'
 import Users from "./Lib/Users";
 import Form from "./components/SignUp/Form";
 import BodyDiv from "./components/Pagestyling/BodyDiv";
@@ -16,6 +17,7 @@ const App = () => {
   return (
     <Router>
       <MainNavigation />
+      <NewListing />
       {/* <main>
       </main> */}
       <Switch>
