@@ -102,8 +102,9 @@ const NewListing = () => {
         <Input 
           element='input'
           type='text'
-          label='Postal Code'
-          errorText="Please enter a Postal Code."
+          label='Location'
+          validators={[VALIDATOR_REQUIRE()]}
+          errorText="Please enter a Location."
           onInput={inputHandler}
         />
         <Button type="submit" disable={!formState.isValid}>Add Listing</Button>

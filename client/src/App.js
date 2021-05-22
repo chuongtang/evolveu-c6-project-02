@@ -18,13 +18,15 @@ const App = () => {
     <Router>
         <MainNavigation />
       <Switch>
+        <Route path="/add_listing" exact>
+          <NewListing />
+        </Route>
         <Route path="/signup" exact>
           <Form />
         </Route>
       </Switch>
         <BodyDiv />
       <CategoryNavLinks />
-      
     </Router>
   );
 };

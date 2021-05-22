@@ -8,6 +8,9 @@ const NavLinks = () => {
     <li>
       <NavLink to="/signup" exact>Login/Signup</NavLink>
     </li>
+    <li>
+      <NavLink to="/add_listing" exact>Add Listing</NavLink>
+    </li>
     
   </ul>
 };
