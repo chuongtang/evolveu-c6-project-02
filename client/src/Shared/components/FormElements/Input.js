@@ -1,16 +1,8 @@
-<<<<<<< HEAD
-import React, {useReducer, useEffect} from 'react';
-//check route for valid
-import { validate } from '../../../components/util/validators';
-import ListingCategories from './ListingCategories';
-import './Input.css';
-=======
 import React, { useReducer, useEffect } from "react";
 
 import { validate } from "../../../components/util/validators";
 import ListingCategories from "./ListingCategories";
 import "./Input.css";
->>>>>>> ecf87e2e0df165bd290bb2ce26eb3e7593b20f12
 
 const inputReducer = (state, action) => {
   switch (action.type) {
