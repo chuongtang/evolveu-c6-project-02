@@ -1,0 +1,29 @@
+[{
+   "firstName":"Gary",
+   "lastName":"Hagerty",
+   "email":"ghagerty@example.com",
+   "phoneNumber":"4035121234",
+   "password":"123456"
+},
+{
+   "firstName":"Kristine",
+   "lastName":"Mack",
+   "email":"kmack@example.com",
+   "phoneNumber":"4035124321",
+   "password":"654321"
+},
+{
+   "firstName":"Rhaissa",
+   "lastName":"Verissimo",
+   "email":"rverissimo@example.com",
+   "phoneNumber":"4035121111",
+   "password":"111111"
+},
+{
+   "firstName":"Abdu",
+   "lastName":"Wahid",
+   "email":"awahid@example.com",
+   "phoneNumber":"4035129999",
+   "password":"999999"
+}
+]

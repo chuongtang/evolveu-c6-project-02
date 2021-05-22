@@ -1,0 +1,26 @@
+[
+    {
+   "category":"Electronics",
+   "description":"24 inch LG TV with all cables.  Can connect with RBG cables, coaxial or HDMI.",
+   "quantity":1,
+   "location":"T2N0N4",
+   "image":"/images/LGTV.jpg",
+   "userID":"kmack"
+},
+{
+   "category":"Construction Material",
+   "description":"Two full 5 Gallons pails. Never used. It was the wrong tint for my house. Paid $240",
+   "quantity":1,
+   "location":"T2Y3V6",
+   "image":"/images/paint.jpg",
+   "userId":"ghagerty"
+},
+{
+   "category":"Textiles",
+   "description":"Mostly batiks from a smoke and pet free home. There is more fabric not shown in pictures.",
+   "quantity":1,
+   "location":"T3A4Y6",
+   "image":"/images/fabric.jpg",
+   "userID":"rverissimo"
+}
+]

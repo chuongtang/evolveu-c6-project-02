@@ -7,6 +7,7 @@ import {
 } from "react-router-dom";
 import MainNavigation from "../src/Shared/components/Navigation/MainNavigation";
 import UserProfilePage from "./Pages/UserProfilePage";
+import NewListing from './components/ListingForm/NewListing'
 import Form from "./components/SignUp/Form";
 import BodyDiv from "./components/Pagestyling/BodyDiv";
 import CategoryNavLinks from "./components/Listings/components/CategoryNavLinks";
