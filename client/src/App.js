@@ -4,33 +4,33 @@ import {
   Route,
   Redirect,
   Switch,
+  NavLink,
 } from "react-router-dom";
 import MainNavigation from "../src/Shared/components/Navigation/MainNavigation";
-// import UserProfilePage from "./Pages/UserProfilePage";
-import NewListing from './components/ListingForm/NewListing'
+import NewListing from "./components/ListingForm/NewListing";
 import Form from "./components/SignUp/Form";
-import LogIn from "./Pages/LogIn"
-import BodyDiv from "./components/Pagestyling/BodyDiv";
-import CategoryNavLinks from "./components/Listings/components/CategoryNavLinks";
+import LogIn from "./Pages/LogIn";
+import HomePage from "./Pages/HomePage";
+import MainHeader from "./Shared/components/Navigation/MainHeader";
 
 import "./App.css";
 const App = () => {
   return (
     <Router>
-        <MainNavigation />
+      <MainHeader />
+      <MainNavigation />
       <Switch>
-        <Route path='/logIn'>
-          <LogIn />
-          </Route >
-        <Route path="/add_listing" exact>
-          <NewListing />
-        </Route>
+        <HomePage path="/" exact />
         <Route path="/signup" exact>
           <Form />
         </Route>
+        <Route path="/add_listing" exact>
+          <NewListing />
+        </Route>
+        <Route path="/logIn">
+          <LogIn />
+        </Route>
       </Switch>
-        <BodyDiv />
-      <CategoryNavLinks />
     </Router>
   );
 };
