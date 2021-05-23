@@ -11,13 +11,17 @@ const CategoryNavLinks = (props) => {
         <NavLink to="/paper">paper</NavLink>
       </li>
       <li>
-        <img
+        {/* <img
           className="li-category-image"
           src="images/plasticswaste.jpg"
           alt="Plastics"
-        />
+        /> */}
 
-        <NavLink className="better-link" to="/plastics">Plastics</NavLink>
+        <NavLink className="better-link" to="/plastics"><img
+          className="li-category-image"
+          src="images/plasticswaste.jpg"
+          alt="Plastics"
+        />Plastics</NavLink>
       </li>
       <li>
         <img className="li-category-image" src="images/metal.jpg" />

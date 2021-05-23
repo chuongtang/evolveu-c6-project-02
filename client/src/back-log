@@ -5,6 +5,6 @@
 - style Home-page 
 
 - fix category nav links
-  -make pictures and category blend as one item
-  -make category felxable to window change
-  -add on hover effect on images/links
+  * make pictures and category blend as one item (just got plastics done , the rest need updating )
+  - make category felxable to window change
+  - add on hover effect on images/links

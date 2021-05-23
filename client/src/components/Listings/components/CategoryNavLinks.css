@@ -32,7 +32,7 @@
 }
 
 .category-nav-links a {
-  border: 1px solid transparent;
+  /* border: 1px solid transparent; */
   color: #292929;
   text-decoration: none;
   padding: 0.5rem;
@@ -45,7 +45,7 @@ border: none;
 
 .category-nav-links a:hover,
 .category-nav-links a.active {
-  background: #60d1e0;
+  /* background: #60d1e0; */
   border-color: #292929;
   color: #292929;
 }
