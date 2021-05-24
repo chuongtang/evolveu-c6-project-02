@@ -6,12 +6,15 @@ import {
   Switch,
   NavLink,
 } from "react-router-dom";
+
 import MainNavigation from "../src/Shared/components/Navigation/MainNavigation";
 import NewListing from "./components/ListingForm/NewListing";
 import Form from "./components/SignUp/Form";
 import LogIn from "./Pages/LogIn";
 import HomePage from "./Pages/HomePage";
 import MainHeader from "./Shared/components/Navigation/MainHeader";
+import Footer from './components/Footer/Footer.js';
+
 
 import "./App.css";
 const App = () => {
@@ -31,7 +34,10 @@ const App = () => {
           <LogIn />
         </Route>
       </Switch>
+      <Footer/>
     </Router>
+    
+    
   );
 };
 
