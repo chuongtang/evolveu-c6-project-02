@@ -45,7 +45,7 @@ const UserProfileEditPage = () => {
     <div>
       <h2>Editing Profile</h2>
       {user && (
-        <EditProfilerForm
+        <EditProfileForm
           onSave={onSave}
           saveError={saveError}
           saveButtonCaption="Save user"
