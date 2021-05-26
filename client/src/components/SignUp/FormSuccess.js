@@ -4,8 +4,8 @@ import './Form.css';
 const FormSuccess = () => {
     return (
         <div className="form-content-right">
-            <div className="form-success"> Received </div>
-        <img src="logo/frontcover1.jpg" alt="success"
+            <div className="form-success"> Thank you for signing up! </div>
+        <img src="logo/welcome.jpg" alt="success"
         className="form-img-2"/>
         </div>
     );

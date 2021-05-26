@@ -21,8 +21,10 @@ return (
 		<Row>
 		<Column>
 			<Heading>About Us</Heading>
-			<FooterLink href="#">Aim</FooterLink>
-			<FooterLink href="#">Vision</FooterLink>
+			<FooterLink href="#">About</FooterLink>
+			<FooterLink href="#">Terms and Conditions</FooterLink>
+			<FooterLink href="#">Privacy</FooterLink>
+			<FooterLink href="#">Blog</FooterLink>
 		</Column>
 		<Column>
 			<Heading>Services</Heading>
