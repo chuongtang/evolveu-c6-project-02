@@ -9,7 +9,7 @@ const listingSchema = new Schema({
     image: { type: String },
     quantity: { type: Number, required: true },
     location: { type: String, required: true },
-    userID: String,
+    userID: { type: mongoose.Types.ObjectId, required: true, ref: 'User' }
     
 });
 
