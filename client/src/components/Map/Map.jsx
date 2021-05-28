@@ -113,9 +113,15 @@ const LocationPin = ({ text }) => {
   return (
 
     <div className="pin">
+      🧃🛏️
+      <h1 style={{ color: 'transparent' }}>spacer </h1>
+      <p>📰</p>
       📺
       <p className="pin-text">{text}</p>
+      👖
+      👚
     </div>
+
   )
 };
 
@@ -138,6 +144,7 @@ const Map = ({ location, zoomLevel }) => {
               lng={location.lng}
               text={location.address}
             />
+
           </GoogleMapReact>
         </div>
       </div>
