@@ -1,13 +1,22 @@
 const express = require('express');
-const { check } = require('express-validator');
+// const { check } = require('express-validator');
 
 const listingsControllers = require('../controllers/listings-controllers');
 
 const router = express.Router();
 
-router.post(
-  '/', listingsControllers.createListing
-);
+router.get('/', listingsControllers.getListings);
+
+router.post('/', listingsControllers.createListing);
+
+router.get('/:lid', listingsControllers.getListingById);
+
+router.get('/user/:uid', listingsControllers.getListingsByUserId)
+// router.get('/:category', listingsControllers.getListingsByCategory);
+
+router.patch('/:lid', listingsControllers.updateListing);
+
+router.delete('/:lid', listingsControllers.deleteListing);
 
 // router.patch(
 //   '/:pid',
@@ -23,5 +32,4 @@ router.post(
 // router.delete('/:pid', placesControllers.deletePlace);
 
 module.exports = router;
-module.exports= router;
 

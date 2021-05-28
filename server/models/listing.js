@@ -9,8 +9,8 @@ const listingSchema = new Schema({
     image: { type: String },
     quantity: { type: Number, required: true },
     location: { type: String, required: true },
-    userID: String,
+    userId: { type: Schema.Types.ObjectId, required: true, ref: 'User' }
     
 });
 
-module.exports = mongoose.model("Listing", listingSchema, "listing");
+module.exports = mongoose.model("Listing", listingSchema, 'listing');
