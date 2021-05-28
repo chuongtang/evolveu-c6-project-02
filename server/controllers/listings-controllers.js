@@ -118,20 +118,27 @@ const createListing = async (req, res, next) => {
 //     return next(error);
 //   }
 
-  const createListing = new Listing ({
-    category,
-    description,
-    //image, 
-    quantity,
-    location,
-    userId
-  });
-  
+  let newListing;
+  try {
+    newListing = await Listing.create({
+      category,
+      description,
+      //image, 
+      quantity,
+      location,
+      userId
+    });
+  } catch (err) {
+      console.log(err)
+      const error = new HttpError('Creating item1 failed, please try again', 500);
+      return next(error);
+  };
+
   let user;
   try {
     user = await User.findById(userId);
   } catch (err) {
-    const error = new HttpError('Creating item failed, please try again', 500);
+    const error = new HttpError('Creating item2 failed, please try again', 500);
     return next(error);
   }
 
@@ -143,17 +150,18 @@ const createListing = async (req, res, next) => {
   console.log(user);
 
   try{
-    user.listings.push(createListing);
+    console.log(newListing._id);
+    user.listings.push(newListing._id);
     await user.save(); 
     } catch (err) {
     const error = new HttpError(
-      'Creating item failed, please try again.',
+      'Creating item3 failed, please try again.',
       500
     );
     return next(error);
   }
 
-  res.status(201).json({ listing: createListing });
+  res.status(201).json({ listing: newListing });
 };
 
 

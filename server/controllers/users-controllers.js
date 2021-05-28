@@ -4,7 +4,6 @@ const HttpError = require('../models/http-error');
 
 const User = require('../models/user');
 
-
 const getUsers = async (req, res, next) => {
   let users;
   try {
@@ -18,7 +17,6 @@ const getUsers = async (req, res, next) => {
   }
   res.json({users: users.map(user => user.toObject({ getters: true }))});
 };
-
 
 const signup = async (req, res, next) => {
   const errors = validationResult(req);
@@ -52,7 +50,7 @@ const signup = async (req, res, next) => {
     username,
     email,
     password,
-    places: []
+    listings: []
   });
 
   try {

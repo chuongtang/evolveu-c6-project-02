@@ -11,7 +11,7 @@ router.post('/', listingsControllers.createListing);
 
 router.get('/:lid', listingsControllers.getListingById);
 
-router.get('/user/:uid', listingsControllers.getListingsByUserId) //not working
+router.get('/user/:uid', listingsControllers.getListingsByUserId)
 // router.get('/:category', listingsControllers.getListingsByCategory);
 
 router.patch('/:lid', listingsControllers.updateListing);
