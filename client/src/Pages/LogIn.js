@@ -36,7 +36,7 @@ const LogIn = () => {
       <h2>Login Required</h2>
       <hr />
       <form onSubmit={logInSubmitHandler}>
-        <Input
+        <Input className="log-in-input"
           element="input"
           id="email"
           type="email"

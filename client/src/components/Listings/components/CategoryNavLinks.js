@@ -7,47 +7,68 @@ const CategoryNavLinks = (props) => {
   return (
     <ul className="category-nav-links">
       <li>
-       
-        <NavLink to="/paper"><img className="li-category-image" src="images/paper waste.jpg" alt='paper' />paper</NavLink>
+        <NavLink to="/paper">
+          <img src="images/paper waste.jpg" alt="paper" />
+          paper
+        </NavLink>
       </li>
       <li>
-        
-
-        <NavLink className="better-link" to="/plastics"><img
-          className="li-category-image"
-          src="images/plasticswaste.jpg"
-          alt="Plastics"
-        />Plastics</NavLink>
+        <NavLink to="/plastics">
+          <img src="images/plasticswaste.jpg" alt="Plastics" />
+          Plastics
+        </NavLink>
       </li>
       <li>
-        
-        <NavLink to="/Electronics"><img className="li-category-image" src="images/metal.jpg" alt='Electronics' />Electronics</NavLink>
-      </li>
-          
-      <li>
-        
-        <NavLink to="/Glass"><img className="li-category-image" src="images/glass.jpg" alt='Glass'/>Glass</NavLink>
-      </li>
-      <li>
-        
-        <NavLink to="/Metal"><img className="li-category-image" src="images/metalscrap.jpg" alt='Metal' />Metal</NavLink>
-      </li>
-      <li>
-        
-        <NavLink to="/Furniture"><img className="li-category-image" src="images/furniture.jpg" alt='Furniture' />Furniture</NavLink>
+        <NavLink to="/Electronics">
+          <img src="images/metal.jpg" alt="Electronics" />
+          Electronics
+        </NavLink>
       </li>
 
       <li>
-        
-        <NavLink to="/Textiles"><img className="li-category-image" src="images/textile.jpg" alt='Textiles' />Textiles</NavLink>
+        <NavLink to="/Glass">
+          <img src="images/glass.jpg" alt="Glass" />
+          Glass
+        </NavLink>
       </li>
       <li>
-        
-        <NavLink to="/Other"><img className="li-category-image" src="images/battery.jpg" alt='Other' />Other</NavLink>
+        <NavLink to="/Metal">
+          <img src="images/metalscrap.jpg" alt="Metal" />
+          Metal
+        </NavLink>
       </li>
       <li>
-        
-        <NavLink to="/Recycables"><img className="li-category-image" src="images/plastic.jpg" alt='Recycables' />Recycables</NavLink>
+        <NavLink to="/Furniture">
+          <img src="images/furniture.jpg" alt="Furniture" />
+          Furniture
+        </NavLink>
+      </li>
+
+      <li>
+        <NavLink to="/Textiles">
+          <img src="images/textile.jpg" alt="Textiles" />
+          Textiles
+        </NavLink>
+      </li>
+      <li>
+        <NavLink to="/Other">
+          <img
+            className="li-category-image"
+            src="images/battery.jpg"
+            alt="Other"
+          />
+          Other
+        </NavLink>
+      </li>
+      <li>
+        <NavLink to="/Recycables">
+          <img
+            className="li-category-image"
+            src="images/plastic.jpg"
+            alt="Recycables"
+          />
+          Recycables
+        </NavLink>
       </li>
     </ul>
   );

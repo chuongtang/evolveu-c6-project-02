@@ -5,16 +5,19 @@
   width: 100%;
   height: 100%;
   display: flex;
-  flex-direction:column;
+  flex-direction: column;
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
   align-content: stretch;
   text-align: center;
-  
-  
 }
-.li-category-image{
+.category-nav-links img {
+  width: 7rem;
+  height: 7rem;
+}
+
+.li-category-image img{
   margin: 0;
   padding: 0;
   width: 7rem;
@@ -32,7 +35,8 @@
 .category-nav-links li {
   margin: 1rem;
   align-content: center;
-
+  width: 7rem;
+  height: 7rem;
 }
 
 .category-nav-links a {
@@ -43,8 +47,8 @@
 }
 
 /* this here is when you hover over the nav links  */
-.better-link{
-border: none;
+.better-link {
+  border: none;
 }
 
 .category-nav-links a:hover,
@@ -92,7 +96,7 @@ border: none;
     color: white;
     background: transparent;
   }
-  
+
   .category-nav-links button:hover,
   .category-nav-links button:active {
     background: #f8df00;
