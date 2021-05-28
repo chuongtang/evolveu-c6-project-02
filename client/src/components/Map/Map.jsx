@@ -20,7 +20,7 @@ const MapFilter = () => {
     <div>
       <Form onSubmit={FilterCatOnMap}>
         <Form.Group controlId='category'>
-          <Form.Label>Category</Form.Label>
+          <Form.Label style={{ fontSize: '2rem', color: 'black' }} >Category</Form.Label>
           <Form.Control
             as='select'
             value={category}
