@@ -15,6 +15,10 @@
 .category-nav-links img {
   width: 7rem;
   height: 7rem;
+  border-radius: 7px;
+  background: #9fb4c1;
+  box-shadow:  -20px -20px 40px #74838d,
+             20px 20px 40px #cae5f5;
 }
 
 .li-category-image img{
